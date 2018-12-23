@@ -3,8 +3,10 @@
   "author": "Ashish Nandan Singh",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ashishcodes4.github.com/ashishcodes4.github.io",
   "dependencies": {
     "express": "^4.16.4",
+    "gh-pages": "^2.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-particles-js": "^2.4.2",
@@ -15,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
